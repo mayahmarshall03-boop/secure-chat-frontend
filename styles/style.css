@@ -1,4 +1,7 @@
 /* GLOBAL */
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -114,4 +117,30 @@ button {
 /* hide login and registration panels */
 .hidden {
     display: none;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 768px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .users-panel,
+  .chat-panel,
+  .side-panel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .messages-box {
+    max-height: 50vh;
+  }
+
+  input, textarea, button {
+    font-size: 16px;
+  }
 }
